@@ -116,7 +116,7 @@ WHERE Tyontekijanumero = 994;
 SELECT * FROM isopalkkaiset;
 
 Päivitys onnistui, koska käytössä on root-tunnus jolla on käytössä kaikki mahdolliset oikeudet.
-Ohto Majaoja (944) katoaa näkymästä isopalkkaiset, koska putoaa alle 5000e/kk vaatimuksen.
+Ohto Majaoja (994) katoaa näkymästä isopalkkaiset, koska putoaa alle 5000e/kk vaatimuksen.
 
 Tehtävä 11:
 UPDATE tyontekija
