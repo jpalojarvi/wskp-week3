@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            /* align-items: center;
+            align-content: center; */
+            background-color: DodgerBlue;
+            height: 100vh;
+            /* flex-wrap: wrap; */
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            height: 100vh;
+            flex: 1;
+            /* flex-grow, flex-shrink, and flex-basis  */
+            /* flex-basis: 200px; */
+
+            /* flex-grow default 0 eli ei kasva*/
+            /* flex-grow: 1; */
+
+            /* flex-shrink: default 1 eli saa pienentyä */
+            /* flex-shrink: 0; */
+
+            font-size: 30px;
+        }
+
+        
+        #vasen {
+            background-color: firebrick;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #oikea {
+            background-color: turquoise;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #kortti {
+            background-color: blanchedalmond;
+            height: 200px;
+            width: 200px;
+        }
+
+        #aaa {
+            background-color: pink;
+            flex-grow: 0;
+            flex-basis: 100px;
+            text-align: center;
+        }
+
+        #bbb {
+            background-color: yellow;
+            flex: 1;
+        }
+
+        @media screen and (max-width: 500px){
+            .flex-container {
+                flex-direction: column;
+        }
+
+        #vasen{
+            order: 2;
+        }
+        #oikea {
+            order: 1;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div id="vasen">1
+            <div id="kortti">kortti</div>
+        </div>
+        <div id="oikea">
+            <div id="aaa">Koirasivut</div>
+            <div id="bbb">bbb</div>
+        </div>
+
+    </div>
+
+
+    <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+    <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+
+</html>
